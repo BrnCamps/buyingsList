@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" />
+    <title>QuickList</title>
+    <link rel="icon" href="Img/Vector.svg" type="Vector.svg"/>
+</head>
+
+<body>
+    <main>
+        <head>
+            <!-- Divisão da logo -->
+            <div class="container" id="head">
+                <div class="logo">
+                <img id="imgLogo" alt="quicklist" src="Img/logo.svg"/>
+                </div>
+            </div>
+            <!-- Divisão do título -->
+            <div class="container" id="title">
+                <div class="announce"></div>
+                    <img src="/Img/link button.svg" alt="voltar"/>
+                    <h2>Lista de Compras</h2>
+                </div>
+            </div>
+        </head>
+        <!-- Barra de adicionar novo item -->
+        <div class="container search">
+            <form>
+                <input type="text" id="newItem" placeholder="Novo item" required/> 
+        <!-- Botão de adicionar novo item  -->
+                <button id="submit" type="submit">Adicionar</button>
+            </form>
+        </div>
+        <!-- Lista de compras -->
+        <div class="container list-co">
+            <ul id="list">
+                <!-- <li class="item">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" class="myCheckBox">
+                        <span class="checkmark"></span></label>
+                        <a class="item-text" id="text2">café</a>
+                        <img class="remove-icon" src="Img/icon delete.svg" alt="remover">
+                </li> -->
+            </ul>
+        </div>
+        <!-- Aviso de exclusão -->
+        <div id="Aviso" class="container warningAlert">
+            <!-- <p id="warning">
+                <img src="Img/warning-circle-filled.svg" alt="alert"/>
+                O item foi removido da lista
+                <img id="close" src="Img/Icon.svg" alt="closeWarning"/>
+                <!-- <button id="closeWarning" title="fechar"></button>   -->
+            <!-- </p> -->
+        </div>
+        <footer class="footer">
+            <p>Created By <span>Brn</span> | &#169; 2024 All Rigths Reserved</p>
+        </footer>
+    </main>
+        <script src="script.js"></script>
+</body>
+</html>
