@@ -209,6 +209,7 @@ label .active{
 
 .remove-icon {
     transition: all .5s;
+    background-color: var(--background-secondary);
 }
 
 .remove-icon:hover {
@@ -232,7 +233,7 @@ label .active{
 }
 #warning img:first-of-type{
     position: relative;
-    right: 245px;
+    right: 145px;
     background-color: var(--color-danger);
 }
 
@@ -290,13 +291,13 @@ footer {
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 391px) {
     #text2 {
         width: 100px;
     }
 
     #newItem {
-        max-width: 110px;
+        max-width: 100px;
     }
 
     #submit {
@@ -304,11 +305,11 @@ footer {
     }
 
     #warning img:first-of-type {
-        right: 245px;
+        right: 145px;
     }
 
     #warning:not(img){
-        width: 258px;
+        width: 170px;
 
     }
 }
