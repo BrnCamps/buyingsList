@@ -333,6 +333,7 @@ footer {
     #newItem {
         /* max-width: 100px; */
         width: 700px;
+        transform: scale(1);
     }
 
     #submit {
