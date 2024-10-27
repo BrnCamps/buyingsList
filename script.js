@@ -89,7 +89,7 @@ function triggerWarning(alerta) {
         // Remove o aviso após 5 segundos
         setTimeout(() => {
             warningAlert.innerHTML = "";
-        }, 3000)
+        }, 1900)
     } catch (error) {
         alert("Não foi possível mostrar o Alerta.");
     }
