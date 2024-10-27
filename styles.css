@@ -220,7 +220,11 @@ label .active{
 }
 
 .warningAlert {
-    max-width: 568px;
+    max-width: 600px;
+    display: flex;           
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 #warning:not(img){
@@ -232,6 +236,7 @@ label .active{
     padding-left: 40px;
     gap: .5rem;
     color: #FFFFFF;
+    margin-bottom: 30px;
 }
 #warning img:first-of-type{
     position: relative;
@@ -293,7 +298,7 @@ footer {
     }
 } */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 300px), (max-width: 600px) {
     .container {
         width: 70%;
         margin: 0 auto;
