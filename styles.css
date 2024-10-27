@@ -75,6 +75,7 @@ form {
     font-size: 14px;
     background-color: #FFFFFF;
     outline: none;
+    max-width: 568px;
 }
 
 #newItem:hover {
@@ -210,6 +211,7 @@ label .active{
 .remove-icon {
     transition: all .5s;
     background-color: var(--background-secondary);
+    padding-right: 15px;
 }
 
 .remove-icon:hover {
@@ -272,7 +274,7 @@ footer {
     background-color: var(--content-secondary);
   }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     #text2 {
         width: 190px;
     }
@@ -289,19 +291,44 @@ footer {
         width: 258px;
 
     }
-}
+} */
 
-@media only screen and (max-width: 391px) {
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+    
+    h2 {
+        font-size: 1px;
+    }
+
+
     #text2 {
-        width: 100px;
+        width: 483px;
+    }
+
+    form {
+        gap: 20px;
+    }
+
+    .search {
+        padding: 0 0;
     }
 
     #newItem {
-        max-width: 100px;
+        /* max-width: 100px; */
+        width: 700px;
     }
 
     #submit {
         font-weight: 500;
+        width: 130px;
+    }
+
+    .remove-icon {
+        padding-right: 15px;
     }
 
     #warning img:first-of-type {
@@ -309,7 +336,10 @@ footer {
     }
 
     #warning:not(img){
-        width: 170px;
+        width: 235px;
+    }
 
+    footer {
+        max-width: 600px;
     }
 }

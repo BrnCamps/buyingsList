@@ -64,7 +64,7 @@ uList.addEventListener("click", (event) => {
     if (event.target.classList.contains("remove-icon")) {
         const remover = event.target.closest(".item");
         remover.remove();
-        triggerWarning("Item removido")
+        triggerWarning("Item removido.")
     }
 });
 
@@ -87,9 +87,9 @@ function triggerWarning(alerta) {
         warningAlert.append(placeWarning)
 
         // Remove o aviso após 5 segundos
-        setTimeout(() => {
-            warningAlert.innerHTML = "";
-        }, 3000)
+        // setTimeout(() => {
+        //     warningAlert.innerHTML = "";
+        // }, 3000)
     } catch (error) {
         alert("Não foi possível mostrar o Alerta.");
     }
