@@ -83,7 +83,7 @@ form {
 
 #newItem:hover {
     border-color:var(--border-hover);
-    transform: scale(1.05);
+    transform: scale(1);
     font-weight: 500;
 }
 
@@ -246,6 +246,7 @@ label .active{
     margin-bottom: 30px;
     animation: fade-in 2s;
 }
+
 #warning img:first-of-type{
     position: relative;
     right: 145px;
