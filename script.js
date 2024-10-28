@@ -141,9 +141,9 @@ function triggerWarning(alerta) {
         warningAlert.append(placeWarning)
 
         // Remove o aviso após 5 segundos
-        // setTimeout(() => {
-        //     warningAlert.innerHTML = "";
-        // }, 1900)
+        setTimeout(() => {
+            warningAlert.innerHTML = "";
+        }, 1900)
     } catch (error) {
         alert("Não foi possível mostrar o Alerta.");
     }
