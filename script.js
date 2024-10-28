@@ -73,7 +73,7 @@ function listAdd(newItemAdd) {
                 priceItem.setAttribute("type", "text")
                 priceItem.setAttribute("alt", "Preço do item")
                 priceItem.setAttribute("max", 6)
-                priceItem.setAttribute("placeholder", "R$ 00,00")
+                priceItem.setAttribute("placeholder", "R$ 0,00")
                 // Adiciona o evento oninput para formatar o valor.
                 priceItem.oninput = () => {
                     let value = priceItem.value.replace(/\D/g, '')
