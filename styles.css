@@ -117,6 +117,19 @@ form {
     transform: scale(1.05);
 }
 
+#total h2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    margin: 6px auto;
+    font-size: 16px;
+    font-weight: 400;
+    animation: fade-left 1s;
+    gap: 60vw;
+}
+
+
 label {
     background-color: var(--background-secondary);
 }
@@ -128,7 +141,7 @@ label {
 }
 
 ul {
-    margin-top: 20px;
+    margin-top: 0;
     padding-left: 0 ;
     list-style: none;
 }
@@ -146,7 +159,7 @@ li {
 }
 
 #text2 {
-    width: 480px;
+    width: 30vw;
     background-color: var(--background-secondary);
     padding-left: 2px;
     font-size: 16px;
@@ -217,6 +230,40 @@ label .active{
     background-image: url(Img/state=selected.svg);
     background-size: cover;
     background-position: center;
+}
+
+.dollarSign {
+    margin-right: 0.4vw;
+    transition: all .5s;
+    background-color: var(--background-secondary);
+    cursor: pointer;
+}
+
+.dollarSign:hover {
+    transform: scale(1.2);
+}
+
+.priceItem {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 8px;
+    padding: 0 10px;
+    width: 67px;
+    height: 20px;
+    border-color: var(--border-primary);
+    color: var(--content-primary);
+    border-style: solid;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    outline: none;
+    max-width: 400px;
+    margin-right: 10px;
+    transition: all 1s;
+    animation: fade-right2 0.5s;
+
 }
 
 .remove-icon {
@@ -324,7 +371,7 @@ footer {
     }
 
     form {
-        gap: 20px;
+        gap: 8px;
     }
 
     .search {
@@ -355,7 +402,7 @@ footer {
         align-items: center;
         justify-content: left;
         margin: 0 auto;
-        width: 275px;
+        width: 235px;
     }
 
     footer {
@@ -405,6 +452,18 @@ footer {
     0% {
         opacity: 0;
         transform: translateX(300px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes fade-right2 {
+    0% {
+        opacity: 0;
+        transform: translateX(30px) scale(0.9);
     }
 
     100% {

@@ -11,9 +11,6 @@
 
 <body>
     <main>
-        <script>
-            AOS.init();
-          </script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <head>
             <!-- Divisão da logo -->
@@ -37,6 +34,11 @@
         <!-- Botão de adicionar novo item  -->
                 <button id="submit" type="submit">Adicionar</button>
             </form>
+        <!-- Total das compras  -->
+        </div>
+        <div class="container" id="total">
+            <h2><small id="totalItens"></small></h2>
+            <h2 id="totalValue"></h2>
         </div>
         <!-- Lista de compras -->
         <div class="container list-co">
@@ -44,8 +46,11 @@
                 <!-- <li class="item">
                     <label class="custom-checkbox">
                         <input type="checkbox" class="myCheckBox">
-                        <span class="checkmark"></span></label>
+                        <span class="checkmark"></span>
+                    </label>
                         <a class="item-text" id="text2">café</a>
+                        <input type="text" class="priceItem" placeholder="Preço do item"/>
+                        <img class="dollarSign" src="Img/dollar.svg" alt="Incluir preço"/>
                         <img class="remove-icon" src="Img/icon delete.svg" alt="remover">
                 </li> -->
             </ul>
