@@ -155,7 +155,7 @@ function updateTotals() {
         const items = uList.children;
 
         // Atualiza as quantidades.
-        totalItens.textContent = `${items.length} ${items.length > 1 ? "Items •" : "Item •"}`
+        totalItens.textContent = `${items.length} ${items.length > 1 ? "Itens •" : "Item •"}`
 
         // Variável para incrementar o total.
         let total = 0;
@@ -194,7 +194,6 @@ function updateTotals() {
         totalValue.innerHTML = "";
 
         symbolBRL.append(total)
-
         // Adiciona o símbolo da moeda e o valor formatado
         totalValue.append(symbolBRL);
 

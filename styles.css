@@ -118,7 +118,7 @@ form {
 }
 
 #total h2 {
-    display: inline-flex;
+    display: inline;
     justify-content: center;
     align-items: center;
     padding-left: 5px;
@@ -126,9 +126,8 @@ form {
     font-size: 16px;
     font-weight: 400;
     animation: fade-left 1s;
-    gap: 60vw;
+    gap: 1vw;
 }
-
 
 label {
     background-color: var(--background-secondary);
